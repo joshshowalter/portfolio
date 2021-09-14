@@ -24,7 +24,11 @@ const menuItems = [
 
 const list = menuItems.map((item, index) => {
   return (
-    <Link to={item.link} className="flex cursor-pointer items-center h-12 p-2 hover:bg-gray-500 rounded-md" key={index}>
+    <Link 
+      to={item.link} 
+      key={index}
+      className="flex cursor-pointer items-center h-12 p-2 hover:bg-gray-500 rounded-md"
+    >
       <span className="mr-8">
         <FontAwesomeIcon icon={item.logo} fixedWidth size="1x" />
       </span> 
