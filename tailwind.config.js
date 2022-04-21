@@ -15,7 +15,7 @@ module.exports = {
         },
         moveTextUp: {
           '100%': {
-            transform: 'translateY(-900%)'
+            transform: 'translateY(-800%)'
           }
         }
       }
