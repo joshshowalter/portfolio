@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        fadeIn: 'fadeIn 3s ease-in-out forwards, moveTextUp 3s ease-in-out 3s forwards',
+        fadeIn: 'fadeIn 3s ease-in-out forwards, moveTextUp 6s ease-in-out forwards',
+        fadeCard: 'fadeCard 1050ms ease-in-out 5s forwards'
       },
       keyframes: {
         fadeIn: {
@@ -14,9 +15,13 @@ module.exports = {
           '100%': { opacity: 1}
         },
         moveTextUp: {
-          '100%': {
-            transform: 'translateY(-800%)'
+          '0%': {
+            transform: 'translateY(200%)'
           }
+        },
+        fadeCard: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 }
         }
       }
     },
