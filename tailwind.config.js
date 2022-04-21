@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       animation: {
         fadeIn: 'fadeIn 3s ease-in-out forwards, moveTextUp 6s ease-in-out forwards',
-        fadeCard: 'fadeCard 1050ms ease-in-out 5s forwards'
+        fadeCard1: 'fadeCard 1050ms ease-in-out 5000ms forwards',
+        fadeCard2: 'fadeCard 1050ms ease-in-out 5250ms forwards',
+        fadeCard3: 'fadeCard 1050ms ease-in-out 5500ms forwards',
+        fadeCard4: 'fadeCard 1050ms ease-in-out 5750ms forwards',
       },
       keyframes: {
         fadeIn: {

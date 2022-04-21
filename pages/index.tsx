@@ -15,28 +15,35 @@ const Home: NextPage = () => {
         </h1>
       </header>
       <main className="flex flex-col flex-1 items-center justify-center px-4 text-center h-0">
-        <span className="animate-fadeCard opacity-0 grid gap-6 grid-cols-2">
+        <span className="grid gap-6 grid-cols-2">
+          <span className="animate-fadeCard1 opacity-0">
           <Card>
             <div className="flex pt-2">
               Example Application 1
             </div>
           </Card>
+          </span>
+          <span className="animate-fadeCard2 opacity-0">
           <Card>
             <div className="flex pt-2">
               Example Application 2
             </div>
           </Card>
-          <Card>
-            <div className="flex pt-2">
-              Example Application 3
-            </div>
-          </Card>
+          </span>
+          <span className="animate-fadeCard3 opacity-0">
+            <Card>
+              <div className="flex pt-2">
+                Example Application 3
+              </div>
+            </Card>
+          </span>
+          <span className="animate-fadeCard4 opacity-0">
           <Card>
             <div className="flex pt-2">
               Example Application 4
             </div>
           </Card>
-
+          </span>
         </span>
       </main>
     </div>
