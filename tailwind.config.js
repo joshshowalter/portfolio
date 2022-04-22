@@ -6,25 +6,25 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        fadeIn: 'fadeIn 3s ease-in-out forwards, moveTextUp 6s ease-in-out forwards',
-        fadeCard1: 'fadeCard 1050ms ease-in-out 5000ms forwards',
-        fadeCard2: 'fadeCard 1050ms ease-in-out 5250ms forwards',
-        fadeCard3: 'fadeCard 1050ms ease-in-out 5500ms forwards',
-        fadeCard4: 'fadeCard 1050ms ease-in-out 5750ms forwards',
+        'fadeIn': 'fadeIn 3s ease-in-out forwards, moveTextUp 5s ease-in-out forwards',
+        'fadeCard1': 'fadeCard 1050ms ease-in-out 4000ms forwards',
+        'fadeCard2': 'fadeCard 1050ms ease-in-out 4250ms forwards',
+        'fadeCard3': 'fadeCard 1050ms ease-in-out 4500ms forwards',
+        'fadeCard4': 'fadeCard 1050ms ease-in-out 4750ms forwards',
       },
       keyframes: {
-        fadeIn: {
+        'fadeIn': {
           '0%': { opacity: 0 },
           '100%': { opacity: 1}
         },
-        moveTextUp: {
+        'moveTextUp': {
           '0%': {
             transform: 'translateY(200%)'
           }
         },
-        fadeCard: {
+        'fadeCard': {
           '0%': { opacity: 0 },
-          '100%': { opacity: 1 }
+          '100%': { opacity: 1}
         }
       }
     },
