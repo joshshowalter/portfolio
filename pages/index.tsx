@@ -35,6 +35,8 @@ const Home: NextPage = () => {
       page: '/about'
     }
   ]
+
+  const animateMap = ['opacity-0 animate-fadeCard1', 'opacity-0 animate-fadeCard2', 'opacity-0 animate-fadeCard3', 'opacity-0 animate-fadeCard4']
   return (
     <div className="flex flex-col w-full items-center h-screen bg-base-200">
       <Head>
@@ -50,7 +52,7 @@ const Home: NextPage = () => {
             {
               cards.map((card, index) => (
                 <Link href={card.page}>
-                <span key={index} className={animate ? 'opacity-0 animate-fadeCard1' : ''}>
+                <span key={index} className={animate ? animateMap[index] : ''}>
                   <Card title={card.title}>
                     <div className="flex pt-2 text-left">
                       {card.description}
