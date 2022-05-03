@@ -8,10 +8,10 @@ export default function Nav() {
     {title: 'Work', url: '#work'}  
   ]
   return (
-    <header className="bg-base-200/[.80] flex justify-center h-[80px] px-6 fixed w-full backdrop-blur z-10 sm:px-8">
+    <header className="bg-base-300/[.80] flex justify-center h-[80px] px-6 fixed w-full backdrop-blur z-10 sm:px-8">
       <nav className="flex justify-between items-center w-full">
         <h1 className="text-3xl text-accent">
-          <Link href="#"><a>JS</a></Link>
+          <Link href="/"><a>JS</a></Link>
         </h1>
         <ul className="flex space-between items-center gap-4 text-md sm:gap-12 sm:text-lg">
           {
@@ -21,9 +21,9 @@ export default function Nav() {
               </li>
             ))
           }
-          <li className="text-accent">
-            <a href="/showalter_resume.pdf" target="_blank">Resume</a>
-          </li>
+          <a role="button" className="btn btn-outline btn-accent" href="/showalter_resume.pdf" target="_blank">
+            Resume
+          </a>
         </ul>
       </nav>
     </header>
