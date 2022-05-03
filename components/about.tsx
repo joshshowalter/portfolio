@@ -2,7 +2,7 @@ import SectionHeader from "./section-header";
 
 export default function About() {
   return (
-    <section className="py-20">
+    <section id="about" className="py-24">
       <SectionHeader title="About Me"></SectionHeader>
       <div className="max-w-prose">
         <div className="mb-4">

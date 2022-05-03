@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen w-full flex flex-col items-start justify-center">
       <div className="ml-1 mb-4">
-        <span className="text-accent text-secondary font-mono">Hello, my name is</span>
+        <span className="text-accent text-accent font-mono">Hello, my name is</span>
       </div>
       <div>
         <h1 className="text-6xl text-white font-bold mb-2">Josh Showalter</h1>
