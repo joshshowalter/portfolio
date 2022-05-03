@@ -13,15 +13,15 @@ export default function Nav() {
         <h1 className="text-3xl text-accent">
           <Link href="#"><a>JS</a></Link>
         </h1>
-        <ul className="flex space-between items-center gap-12">
+        <ul className="flex space-between items-center gap-4 text-md sm:gap-12 sm:text-lg ">
           {
             navItems.map(item => (
-              <li key={item.title} className="hover:text-accent cursor-pointer text-lg">
+              <li key={item.title} className="hover:text-accent cursor-pointer">
                 <Link href={item.url}>{item.title}</Link>
               </li>
             ))
           }
-          <li className="text-accent text-lg">
+          <li className="text-accent">
             <a href="/showalter_resume.pdf" target="_blank">Resume</a>
           </li>
         </ul>
