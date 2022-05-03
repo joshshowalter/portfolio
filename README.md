@@ -1,2 +1,4 @@
 # Portfolio site for Josh Showalter
-- Check it out at https://showalter.me
+#### Built with Next.js and TailwindCSS
+
+https://showalter.me
