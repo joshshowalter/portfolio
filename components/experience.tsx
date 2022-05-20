@@ -1,30 +1,19 @@
+import { useEffect } from "react";
 import SectionHeader from "./section-header";
 
-export default function Experience() {
-  const experience = [
-    {
-      position: 'Front-end Engineer',
-      company: 'Nextworld',
-      date: 'Jan 2017 - Sep 2019'
-    },
-    {
-      position: 'Full-stack Engineer',
-      company: 'Accenture',
-      date: 'Sep 2019 - Jan 2022'
-    },
-    {
-      position: 'Senior Software Engineer',
-      company: 'Brag House',
-      date: 'Jan 2022 - present'
-    }
-  ];
+interface Experience {
+  role: string;
+  company: string;
+  date: string;
+  description: string; 
+}
 
+export default function Experience({experiences}: {experiences: Array<Experience>}) {
   return (
     <section id="experience" className="py-32">
       <SectionHeader title="Where I Have Worked" />
-      <div className="italic mb-6 text-lg">Section is under progress. Check out my resume for details!</div>
       {
-        experience.map((job, index) => (
+        experiences.map((job: Experience, index: number) => (
           <ExperienceItem key={index} job={job} />
         ))
       }
@@ -32,14 +21,21 @@ export default function Experience() {
   );
 }
 
-const ExperienceItem = ({job}: {job: any}) => {
+const ExperienceItem = ({job}: { job: Experience}) => {
   return (
-    <div className="rounded-lg w-full text-xl p-4 mb-4 bg-base-100 shadow-md transition all ease-in-out duration-300 hover:shadow-xl hover:cursor-pointer hover:-translate-y-1">
-      <div>
-        <span className="">{job.position} | </span>
-        <span className="text-accent">{job.company}</span>
+    <div tabIndex={0} className="collapse collapse-arrow rounded-lg w-full text-xl p-4 mb-4 bg-base-100 shadow-md transition all ease-in-out duration-300 hover:shadow-lg hover:cursor-pointer hover:-translate-y-1">
+      <input type="checkbox" className="peer" /> 
+      <div className="collapse-title">
+        <div>
+          <span className="">{job.role} | </span>
+          <span className="text-accent">{job.company}</span>
+        </div>
+        <div className="text-sm mt-0.5 italic">{job.date}</div>
       </div>
-      <div className="text-sm mt-0.5 italic">{job.date}</div>
+      <div className="collapse-content prose text-accent-content">
+        <div tabIndex={0} dangerouslySetInnerHTML={{ __html: job.description }}>
+        </div>
+      </div>
     </div>
   );
 }

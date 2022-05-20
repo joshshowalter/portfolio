@@ -5,7 +5,7 @@ export default function Contact() {
         Contact Me
       </h2>
       <div>
-        I am currently looking for new opportunities and would love to speak with you!
+        I am not currently looking for new opportunities but my inbox is always open!
         <div className="mt-2 text-lg text-accent sm:text-center">
           <a href="mailto: joshhshowalter@gmail.com">joshhshowalter@gmail.com</a>
         </div>
