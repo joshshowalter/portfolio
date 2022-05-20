@@ -11,7 +11,7 @@ export default function Hero() {
         <h2 className="text-6xl font-semibold">I am a Software Engineer</h2>
       </div>
       <div className="">
-        <p className="mt-12 max-w-prose">I am a full-stack software engineer with a specialization in Angular and React, creating intuitive, modern web applications. Currently building the central esports community plaform for casual gamers at <span className="text-[#ff41ff]">Brag House</span>.</p>
+        <p className="mt-12 max-w-prose">I am a full-stack software engineer with a specialization in Angular and React, creating intuitive, modern web applications. Currently building the platform to handle all product notification infrastructure at <a href="https://courier.com" target="_blank" className="text-secondary">Courier</a>.</p>
       </div>
     </section>
   );

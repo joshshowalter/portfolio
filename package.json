@@ -6,11 +6,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.4",
+    "@tailwindcss/typography": "^0.5.2",
     "daisyui": "^2.14.1",
+    "graphql": "^16.5.0",
     "next": "latest",
     "next-themes": "^0.1.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "remark-html": "^15.0.1",
+    "remark-parse": "^10.0.1",
+    "unified": "^10.1.2"
   },
   "devDependencies": {
     "@types/node": "17.0.4",
