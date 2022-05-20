@@ -24,7 +24,6 @@ export default function Experience({experiences}: {experiences: Array<Experience
 const ExperienceItem = ({job}: { job: Experience}) => {
   return (
     <div tabIndex={0} className="collapse collapse-arrow rounded-lg w-full text-xl p-4 mb-4 bg-base-100 shadow-md transition all ease-in-out duration-300 hover:shadow-lg hover:cursor-pointer hover:-translate-y-1">
-      <input type="checkbox" className="peer" /> 
       <div className="collapse-title">
         <div>
           <span className="">{job.role} | </span>
@@ -33,7 +32,7 @@ const ExperienceItem = ({job}: { job: Experience}) => {
         <div className="text-sm mt-0.5 italic">{job.date}</div>
       </div>
       <div className="collapse-content prose text-accent-content">
-        <div tabIndex={0} dangerouslySetInnerHTML={{ __html: job.description }}>
+        <div dangerouslySetInnerHTML={{ __html: job.description }}>
         </div>
       </div>
     </div>
