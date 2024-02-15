@@ -1,16 +1,15 @@
 export default function Contact() {
   return (
-    <section className="py-32 flex flex-col sm:items-center">
-      <h2 className="text-4xl font-semibold text-white pb-4">
-        Contact Me
-      </h2>
+    <section className="flex flex-col py-32 sm:items-center">
+      <h2 className="pb-4 text-4xl font-semibold text-white">Contact Me</h2>
       <div>
-        I am not currently looking for new opportunities but my inbox is always open!
+        Currently open to new opportunities! Feel free to reach out to me at:
         <div className="mt-2 text-lg text-accent sm:text-center">
-          <a href="mailto: joshhshowalter@gmail.com">joshhshowalter@gmail.com</a>
+          <a href="mailto: joshhshowalter@gmail.com">
+            joshhshowalter@gmail.com
+          </a>
         </div>
       </div>
     </section>
-  );
-
+  )
 }
