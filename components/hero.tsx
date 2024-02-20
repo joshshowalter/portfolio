@@ -1,32 +1,32 @@
-import { useEffect, useRef, useState } from 'react'
-import { CSSTransition } from 'react-transition-group'
+import { useEffect, useRef, useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 const Hero = () => {
-  const [transition, setTransition] = useState(false)
+  const [transition, setTransition] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setTransition(true)
-    }, 0)
-  }, [])
+      setTransition(true);
+    }, 0);
+  }, []);
 
   const one = (
     <div className="ml-1 mb-4">
       <span className="font-mono text-accent">Hello, my name is</span>
     </div>
-  )
+  );
 
   const two = (
     <div>
       <h1 className="mb-2 text-6xl font-bold text-white">Josh Showalter</h1>
     </div>
-  )
+  );
 
   const three = (
     <div>
       <h2 className="text-6xl font-semibold">I am a Software Engineer</h2>
     </div>
-  )
+  );
 
   const four = (
     <div>
@@ -44,9 +44,9 @@ const Hero = () => {
         .
       </p>
     </div>
-  )
+  );
 
-  const transitionItems = [one, two, three, four]
+  const transitionItems = [one, two, three, four];
 
   return (
     <section className="flex min-h-screen w-full flex-col items-start justify-center">
@@ -56,19 +56,19 @@ const Hero = () => {
         </Animate>
       ))}
     </section>
-  )
-}
+  );
+};
 
 const Animate = ({
   children,
   index,
   show,
 }: {
-  children: any
-  index: number
-  show: boolean
+  children: any;
+  index: number;
+  show: boolean;
 }) => {
-  const ref = useRef(null)
+  const ref = useRef(null);
 
   return (
     <CSSTransition classNames="fade-up" timeout={2000} in={show} nodeRef={ref}>
@@ -81,7 +81,7 @@ const Animate = ({
         {children}
       </div>
     </CSSTransition>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
