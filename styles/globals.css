@@ -5,3 +5,18 @@
 html {
   scroll-behavior: smooth;
 }
+
+.fade-up-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-up-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+.fade-up-enter-done {
+  opacity: 1 !important;
+}
