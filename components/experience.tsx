@@ -1,6 +1,8 @@
+import { useRef } from 'react'
 import SectionHeader from './section-header'
+import { useSR } from '../hooks/useSR'
 
-interface Experience {
+export type ExperienceItem = {
   role: string
   company: string
   date: string
@@ -10,19 +12,22 @@ interface Experience {
 export default function Experience({
   experiences,
 }: {
-  experiences: Array<Experience>
+  experiences: ExperienceItem[]
 }) {
+  const revealContainer = useRef(null)
+  useSR(revealContainer)
+
   return (
-    <section id="experience" className="py-32">
+    <section id="experience" className="py-32" ref={revealContainer}>
       <SectionHeader title="Where I Have Worked" />
-      {experiences.map((job: Experience, index: number) => (
+      {experiences.map((job: ExperienceItem, index: number) => (
         <ExperienceItem key={index} job={job} />
       ))}
     </section>
   )
 }
 
-const ExperienceItem = ({ job }: { job: Experience }) => {
+const ExperienceItem = ({ job }: { job: ExperienceItem }) => {
   return (
     <div
       tabIndex={0}
