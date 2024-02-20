@@ -1,10 +1,10 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-import Hero from '../components/hero'
-import About from '../components/about'
-import Experience, { ExperienceItem } from '../components/experience'
-import Projects from '../components/projects'
-import Contact from '../components/contact'
+import Hero from '../components/hero';
+import About from '../components/about';
+import Experience, { ExperienceItem } from '../components/experience';
+import Projects from '../components/projects';
+import Contact from '../components/contact';
 
 export async function getStaticProps() {
   const data = {
@@ -15,7 +15,7 @@ export async function getStaticProps() {
         date: 'May 2022 - Present',
         description: `
         <div>
-          <strong>Full stack Engineer | UI Team Lead building notification infrastructure platform backed by YCombinator, Google Ventures, Bessemer Venture Partners</strong>
+          <strong>Full Stack Engineer | UI Team Lead building notification infrastructure platform backed by YCombinator, Google Ventures, Bessemer Venture Partners</strong>
           <ul>
             <li>Led six-month UI "2.0" initiative across application through comprehensive component library and design system implementation, bringing 30% performance improvement and light/dark mode support</li>
             <li>Co-engineered drag-n-drop automation product for building/managing complex  workflows, leading to notification volume increases in the hundreds of thousands per month</li>
@@ -78,13 +78,13 @@ export async function getStaticProps() {
         `,
       },
     ],
-  }
+  };
 
   return {
     props: {
       experiences: data.experiences,
     },
-  }
+  };
 }
 
 const Home = ({ experiences }: { experiences: ExperienceItem[] }) => {
@@ -113,7 +113,7 @@ const Home = ({ experiences }: { experiences: ExperienceItem[] }) => {
         </span>
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

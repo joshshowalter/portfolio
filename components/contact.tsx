@@ -1,6 +1,15 @@
+import { useRef } from 'react';
+import { useSR } from '../hooks/useSR';
+
 export default function Contact() {
+  const revealContainer = useRef(null);
+  useSR(revealContainer);
+
   return (
-    <section className="flex flex-col py-32 sm:items-center">
+    <section
+      className="flex flex-col py-32 sm:items-center"
+      ref={revealContainer}
+    >
       <h2 className="pb-4 text-4xl font-semibold text-white">Contact Me</h2>
       <div>
         Currently open to new opportunities! Feel free to reach out to me at:
@@ -11,5 +20,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }
