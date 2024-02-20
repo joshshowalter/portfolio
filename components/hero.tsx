@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { CSSTransition } from 'react-transition-group'
 
 const Hero = () => {
   const [transition, setTransition] = useState(false)
@@ -61,12 +61,12 @@ const Hero = () => {
 
 const Animate = ({
   children,
-  show,
   index,
+  show,
 }: {
   children: any
-  show: boolean
   index: number
+  show: boolean
 }) => {
   const ref = useRef(null)
 
@@ -74,7 +74,7 @@ const Animate = ({
     <CSSTransition classNames="fade-up" timeout={2000} in={show} nodeRef={ref}>
       {/* the transition will end with fade-up-enter-done which sets opacity to 1 */}
       <div
-        className="opacity-0"
+        className="fade-up-enter"
         style={{ transitionDelay: `${(index + 1) * 150}ms` }}
         ref={ref}
       >

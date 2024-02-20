@@ -1,9 +1,8 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 
 import Hero from '../components/hero'
 import About from '../components/about'
-import Experience from '../components/experience'
+import Experience, { ExperienceItem } from '../components/experience'
 import Projects from '../components/projects'
 import Contact from '../components/contact'
 
@@ -88,7 +87,7 @@ export async function getStaticProps() {
   }
 }
 
-const Home: NextPage = ({ experiences }: any) => {
+const Home = ({ experiences }: { experiences: ExperienceItem[] }) => {
   return (
     <>
       <Head>

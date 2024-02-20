@@ -1,8 +1,13 @@
+import { useEffect, useRef } from 'react'
 import SectionHeader from './section-header'
+import { useSR } from '../hooks/useSR'
 
 export default function About() {
+  const revealContainer = useRef(null)
+  useSR(revealContainer)
+
   return (
-    <section id="about" className="py-32">
+    <section id="about" className="py-32" ref={revealContainer}>
       <SectionHeader title="About Me"></SectionHeader>
       <div className="max-w-prose">
         <div className="mb-4">
