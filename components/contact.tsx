@@ -12,7 +12,7 @@ export default function Contact() {
     >
       <h2 className="pb-4 text-4xl font-semibold text-white">Contact Me</h2>
       <div>
-        Currently open to new opportunities! Feel free to reach out to me at:
+        Currently not looking for new opportunities, but my inbox is always open! Feel free to reach out to me at:
         <div className="mt-2 text-lg text-accent sm:text-center">
           <a href="mailto: joshhshowalter@gmail.com">
             joshhshowalter@gmail.com
