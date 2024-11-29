@@ -10,9 +10,22 @@ export async function getStaticProps() {
   const data = {
     experiences: [
       {
+        role: 'Lead Front End Engineer',
+        company: "Candid Health",
+        date: 'May 2024 - Present',
+        description: `
+        <div>
+          <strong>Lead Front End Engineer at Candid Health. Automated medical billing backed by YCombinator, First Round Capital, and 8VC</strong>
+          <ul>
+            <li>Currently leading frontend engineering</li>
+            <li>Technical Experience: React, TypeScript, TailwindCSS, React Query, React Hook Form, Node.js</li>
+          </ul>
+        `
+      },
+      {
         role: 'Senior Full Stack Engineer',
         company: 'Courier',
-        date: 'May 2022 - Present',
+        date: 'May 2022 - April 2024',
         description: `
         <div>
           <strong>Full Stack Engineer | UI Team Lead building notification infrastructure platform backed by YCombinator, Google Ventures, Bessemer Venture Partners</strong>

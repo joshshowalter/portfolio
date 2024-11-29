@@ -33,13 +33,13 @@ const Hero = () => {
       <p className="mt-12 max-w-prose">
         I am a full-stack software engineer with a specialization in Next.js and
         React, creating modern and intuitive web applications. Currently
-        building a platform to handle product notification infrastructure at{' '}
+        rebuilding medical billing from the ground up at{' '}
         <a
-          href="https://courier.com"
+          href="https://joincandidhealth.com"
           target="_blank"
-          className="text-secondary"
+          className="text-indigo-600"
         >
-          Courier
+          Candid Health
         </a>
         .
       </p>
