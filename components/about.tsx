@@ -19,9 +19,9 @@ export default function About() {
           pivotal moment that ignited my career trajectory.
         </div>
         <div>
-          Over the last 7+ years, I've had the opportunity to build software for
+          Over the last 8 years, I've had the opportunity to build software for
           startups and established companies in very different industries like
-          devtools, esports, ERP, and technology consulting. Take a look below
+          devtools, healthcare, esports, ERP, and technology consulting. Take a look below
           for more details about the technologies I've used and the products
           I've helped create!
         </div>
